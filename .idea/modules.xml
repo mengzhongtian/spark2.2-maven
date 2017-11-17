@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SparkRepoExample/SparkRepoExample.iml" filepath="$PROJECT_DIR$/SparkRepoExample/SparkRepoExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/module1/module1.iml" filepath="$PROJECT_DIR$/module1/module1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spark2.2-maven.iml" filepath="$PROJECT_DIR$/spark2.2-maven.iml" />
+    </modules>
+  </component>
+</project>
