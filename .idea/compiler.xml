@@ -6,12 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SparkRepoExample" />
+        <module name="mooc" />
         <module name="SparkRepoexample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="module1" target="1.5" />
+      <module name="mooc" target="1.5" />
       <module name="spark2.2-maven" target="1.5" />
       <module name="SparkRepoexample" target="1.5" />
       <module name="SparkRepoExample" target="1.5" />
