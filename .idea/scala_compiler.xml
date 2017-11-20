@@ -3,7 +3,7 @@
   <component name="ScalaCompilerConfiguration">
     <profile name="Maven 1" modules="mooc">
       <parameters>
-        <parameter value="-target:jvm-1.5" />
+        <parameter value="-target:jvm-1.8" />
       </parameters>
     </profile>
   </component>

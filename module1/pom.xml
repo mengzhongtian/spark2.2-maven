@@ -13,6 +13,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>../SparkRepoexample</module>
+        <module>../mooc</module>
     </modules>
     <dependencies>
         <dependency>
@@ -28,6 +29,9 @@
             <artifactId>spark-sql_2.11</artifactId>
             <version>2.2.0</version>
         </dependency>
+
+
+
 
     </dependencies>
 
