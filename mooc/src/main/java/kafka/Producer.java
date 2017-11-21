@@ -35,6 +35,12 @@ public class Producer extends Thread {
         props.put("client.id", "DemoProducer");
         props.put("key.serializer", "org.apache.kafka.common.serialization.IntegerSerializer");
         props.put("value.serializer", "org.apache.kafka.common.serialization.StringSerializer");
+        props.put("acks", "all");
+        props.put("retries", 0);
+        props.put("batch.size", 16384);
+        props.put("linger.ms", 1);
+        props.put("buffer.memory", 33554432);
+
         producer = new KafkaProducer<>(props);
         this.topic = topic;
         this.isAsync = isAsync;

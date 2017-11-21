@@ -10,12 +10,11 @@
         <module name="SparkRepoexample" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="module1" target="1.5" />
-      <module name="mooc" target="1.5" />
-      <module name="spark2.2-maven" target="1.5" />
-      <module name="SparkRepoexample" target="1.5" />
-      <module name="SparkRepoExample" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="module1" target="1.8" />
+      <module name="mooc" target="1.8" />
+      <module name="spark2.2-maven" target="1.8" />
+      <module name="SparkRepoExample" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
