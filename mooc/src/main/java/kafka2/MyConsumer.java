@@ -10,7 +10,7 @@ import java.util.Properties;
 public class MyConsumer {
     public static void main(String[] args) {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "192.168.204.3:9092");
+        props.put("bootstrap.servers", "10.6.5.252:9092");
         props.put("group.id", "test");
         props.put("enable.auto.commit", "true");
         props.put("auto.commit.interval.ms", "1000");

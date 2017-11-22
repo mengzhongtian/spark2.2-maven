@@ -13,7 +13,7 @@ import java.util.concurrent.Future;
 public class MyProducer {
     public static void main(String[] args) {
         Properties props = new Properties();
-        props.put("bootstrap.servers", "192.168.204.3:9092");
+        props.put("bootstrap.servers", "10.6.5.252:9092");
         props.put("acks", "all");
         props.put("retries", 0);
         props.put("batch.size", 16384);
@@ -24,7 +24,22 @@ public class MyProducer {
 
         Producer<String, String> producer = new KafkaProducer<>(props);
         for (int i = 0; i < 100; i++) {
-            Future<RecordMetadata> mytest = producer.send(new ProducerRecord<String, String>("mytest", Integer.toString(i), Integer.toString(i)));
+            Future<RecordMetadata> future = producer.send(new ProducerRecord<String, String>("test", Integer.toString(i), Integer.toString(i)));
+            try {
+                RecordMetadata recordMetadata = future.get();
+                int partition = future.get().partition();
+                System.out.println(partition);
+
+//                boolean b = recordMetadata.hasOffset();
+//                System.out.println(b);
+//                String topic = recordMetadata.topic();
+//                System.out.println(topic);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } catch (ExecutionException e) {
+                e.printStackTrace();
+            }
+
 
             System.out.println(i);
         }
