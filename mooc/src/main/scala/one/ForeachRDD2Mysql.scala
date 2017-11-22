@@ -5,7 +5,7 @@ import java.sql.DriverManager
 import org.apache.spark.SparkConf
 import org.apache.spark.streaming.{Seconds, StreamingContext}
 
-object ForeachRDDApp {
+object ForeachRDD2Mysql {
   /**
     * spark-submit --class one.ForeachRDDApp --jars mysql-connector-java-5.1.6.jar test.jar提交的命令
     *
