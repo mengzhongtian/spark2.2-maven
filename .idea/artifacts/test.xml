@@ -3,6 +3,7 @@
     <output-path>$PROJECT_DIR$/out/artifacts/test</output-path>
     <root id="archive" name="test.jar">
       <element id="module-output" name="mooc" />
+      <element id="library" level="project" name="Maven: org.apache.spark:spark-streaming-flume_2.11:2.2.0" />
     </root>
   </artifact>
 </component>
