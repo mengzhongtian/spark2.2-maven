@@ -5,7 +5,10 @@ import org.apache.spark.streaming.{Seconds, StreamingContext}
 
 object BlackList {
   /**
-    * spark-submit --class one.BlackList test.jar
+    * 1.spark-submit --class one.BlackList test.jar
+    * 2.transform的使用
+    * 如果想应用RDD上面的算子，就得用tanrsform会针对Dstream里的RDD进行操作
+    *
     * @param args
     */
   def main(args: Array[String]): Unit = {
@@ -21,6 +24,7 @@ object BlackList {
         x._2._2.getOrElse(false) == false
       }).map(x => x._2._1)
     })
+
     result.print()
     ssc.start()
     ssc.awaitTermination()
