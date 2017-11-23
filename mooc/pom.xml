@@ -14,17 +14,6 @@
 
     <dependencies>
 
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka_2.11</artifactId>
-            <version>1.0.0</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-clients</artifactId>
-            <version>1.0.0</version>
-        </dependency>
 
         <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
         <dependency>
@@ -49,7 +38,6 @@
         </dependency>
 
 
-        <!-- https://mvnrepository.com/artifact/org.apache.spark/spark-sql -->
         <dependency>
             <groupId>org.apache.spark</groupId>
             <artifactId>spark-sql_2.11</artifactId>
@@ -95,7 +83,24 @@
             <version>3.5</version>
         </dependency>
 
+        <!--kafka-->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka_2.11</artifactId>
+            <version>1.0.0</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.spark</groupId>
+            <artifactId>spark-streaming-kafka-0-8_2.11</artifactId>
+            <version>2.2.0</version>
+        </dependency>
 
 
     </dependencies>
