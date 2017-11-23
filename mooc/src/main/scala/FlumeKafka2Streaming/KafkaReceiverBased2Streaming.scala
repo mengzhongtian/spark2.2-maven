@@ -17,6 +17,9 @@ object KafkaReceiverBased2Streaming {
     val conf = new SparkConf().setMaster("local[2]").setAppName("FlumePush2Streaming")
     val ssc = new StreamingContext(conf, Seconds(5))
 
+    /**
+      * numThreads表示线程的数量
+      */
     val Array(zk, groupid, topic, numThreads) = args
 
     val topicMap = topic.split(",").map((_, numThreads.toInt)).toMap[String, Int]
