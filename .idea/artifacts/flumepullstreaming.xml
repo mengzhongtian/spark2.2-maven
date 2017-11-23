@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="flumepullstreaming">
+    <output-path>$PROJECT_DIR$/out/artifacts/flumepullstreaming</output-path>
+    <root id="archive" name="flumepullstreaming.jar">
+      <element id="module-output" name="mooc" />
+    </root>
+  </artifact>
+</component>
