@@ -12,6 +12,7 @@
         <module>module1</module>
         <module>mooc</module>
         <module>mooc</module>
+        <module>cdv</module>
     </modules>
 
     <dependencies>

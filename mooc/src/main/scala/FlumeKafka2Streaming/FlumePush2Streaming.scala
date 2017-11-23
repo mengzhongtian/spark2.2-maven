@@ -51,6 +51,30 @@ object FlumePush2Streaming {
     *
     *
     */
+
+  /**
+    * flume配置文件：
+    *
+    *flume_push_streaming.conf
+    * simple-agent.sources = netcat-source
+    * simple-agent.sinks = avro-sink
+    * simple-agent.channels = memory-channel
+    *
+    * simple-agent.sources.netcat-source.type = netcat
+    * simple-agent.sources.netcat-source.bind = localhost
+    * simple-agent.sources.netcat-source.port = 4444
+    * simple-agent.sinks.avro-sink.type = avro
+    * simple-agent.sinks.avro-sink.hostname = localhost
+    * simple-agent.sinks.avro-sink.port = 41414
+    * *
+    * simple-agent.channels.memory-channel.type = memory
+    * *
+    * simple-agent.sources.netcat-source.channels = memory-channel
+    * simple-agent.sinks.avro-sink.channel = memory-channel
+    *
+    *
+    */
+
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setMaster("local[2]").setAppName("FlumePush2Streaming")
     val ssc = new StreamingContext(conf, Seconds(5))

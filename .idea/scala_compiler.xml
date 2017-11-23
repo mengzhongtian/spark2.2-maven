@@ -6,5 +6,10 @@
         <parameter value="-target:jvm-1.8" />
       </parameters>
     </profile>
+    <profile name="Maven 2" modules="cdv">
+      <parameters>
+        <parameter value="-target:jvm-1.5" />
+      </parameters>
+    </profile>
   </component>
 </project>
