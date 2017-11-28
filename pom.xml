@@ -13,6 +13,7 @@
         <module>mooc</module>
         <module>mooc</module>
         <module>cdv</module>
+        <module>mylog4j</module>
     </modules>
 
     <dependencies>

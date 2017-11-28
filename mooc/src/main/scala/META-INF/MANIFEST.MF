@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: FlumeKafka2Streaming.FlumePush2Streaming
+Main-Class: log4jgen.LoggerGenerator
 

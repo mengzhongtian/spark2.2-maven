@@ -7,14 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cdv" />
-        <module name="mooc" />
+        <module name="mylog4j" />
         <module name="SparkRepoexample" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="cdv" target="1.8" />
+      <module name="dabao" target="1.8" />
       <module name="module1" target="1.8" />
       <module name="mooc" target="1.8" />
+      <module name="mylog4j" target="1.8" />
       <module name="spark2.2-maven" target="1.8" />
       <module name="SparkRepoExample" target="1.8" />
     </bytecodeTargetLevel>

@@ -11,6 +11,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>mooc</artifactId>
+    <packaging>pom</packaging>
+    <modules>
+        <module>../dabao</module>
+    </modules>
 
     <dependencies>
 
@@ -101,6 +105,14 @@
             <artifactId>spark-streaming-kafka-0-8_2.11</artifactId>
             <version>2.2.0</version>
         </dependency>
+
+        <!--log4j-->
+        <dependency>
+            <groupId>org.apache.flume.flume-ng-clients</groupId>
+            <artifactId>flume-ng-log4jappender</artifactId>
+            <version>1.6.0</version>
+        </dependency>
+
 
 
     </dependencies>
