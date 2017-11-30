@@ -12,9 +12,7 @@
 
     <artifactId>mooc</artifactId>
     <packaging>pom</packaging>
-    <modules>
-        <module>../dabao</module>
-    </modules>
+
 
     <dependencies>
 

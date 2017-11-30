@@ -9,6 +9,7 @@ object Demo {
       .getOrCreate()
 
     // Create an RDD
+    //sparkcore读取windows本地文件的路径写法：
 //    val peopleRDD = spark.sparkContext.textFile("file:////C://list.txt")
 val peopleRDD = spark.sparkContext.textFile("list.txt")
     println("hello world")
