@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SparkRepoExample/SparkRepoExample.iml" filepath="$PROJECT_DIR$/SparkRepoExample/SparkRepoExample.iml" />
-      <module fileurl="file://$PROJECT_DIR$/cdv/cdv.iml" filepath="$PROJECT_DIR$/cdv/cdv.iml" />
       <module fileurl="file://$PROJECT_DIR$/module1/module1.iml" filepath="$PROJECT_DIR$/module1/module1.iml" />
       <module fileurl="file://$PROJECT_DIR$/mooc/mooc.iml" filepath="$PROJECT_DIR$/mooc/mooc.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylog4j/mylog4j.iml" filepath="$PROJECT_DIR$/mylog4j/mylog4j.iml" />
